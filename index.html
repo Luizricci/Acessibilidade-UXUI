@@ -261,7 +261,77 @@
                         </div>
                         <span class="texto-progresso">Passo <span id="passo-atual">1</span> de 4</span>
                     </div>
+                    <div class="passo-compra passo-1">
+                        <h4><strong>Passo 1: Escolha o tamanho do perfume</strong></h4>
 
+                        <p class="instrucao">Selecione uma das opções abaixo:</p>
+
+                        <!-- PROBLEMA: Grupo de radio buttons sem estrutura semântica e sem labels -->
+                        <div class="opcoes-tamanho">
+                            <input type="radio" id="tamanho-50ml" name="tamanho" value="50" data-preco="299.90" checked>
+                            <div class="opcao-tamanho">
+                                <div class="tamanho-visual">
+                                    <!-- PROBLEMA: Alt text genérico -->
+                                    <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
+                                        alt="produto meia-boca" class="mini-frasco">
+                                </div>
+                                <div class="tamanho-info">
+                                    <strong>50 mililitros - R$ 299,90</strong>
+                                    <span class="descricao-opcao" id="desc-50ml">Tamanho ideal para experimentar</span>
+                                </div>
+                                <input type="radio" id="tamanho-75ml" name="tamanho" value="75" data-preco="399.90">
+                            <div class="opcao-tamanho popular">
+                                <div class="tamanho-visual">
+                                    <!-- PROBLEMA: Alt text genérico -->
+                                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
+                                        alt="frasco lixo" class="mini-frasco">
+                                </div>
+                                <div class="tamanho-info">
+                                    <strong>75 mililitros - R$ 399,90</strong>
+                                    <span class="descricao-opcao" id="desc-75ml">
+                                        <span>🔥</span>
+                                        MAIS POPULAR - Melhor custo benefício
+                                    </span>
+                                </div>
+                            </div>
+
+                            <input type="radio" id="tamanho-100ml" name="tamanho" value="100" data-preco="499.90">
+                            <div class="opcao-tamanho melhor-valor">
+                                <div class="tamanho-visual">
+                                    <!-- PROBLEMA: Alt text genérico -->
+                                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
+                                        alt="imagem do produto bem ruimzim" class="mini-frasco">
+                                </div>
+                                <div class="tamanho-info">
+                                    <strong>100 mililitros - R$ 499,90</strong>
+                                    <span class="descricao-opcao" id="desc-100ml">
+                                        <span>💰</span>
+                                        MELHOR VALOR - Maior economia
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+                    <div class="passo-compra passo-2">
+                        <h4><strong>Passo 2: Quantidade de produtos</strong></h4>
+
+                        <div class="quantidade-container">
+                            <!-- PROBLEMA: Select sem label associado -->
+                            <span class="label-quantidade">Quantos perfumes você deseja?</span>
+                            <select id="quantidade" name="quantidade" class="select-quantidade">
+                                <option value="1">1 perfume</option>
+                                <option value="2">2 perfumes</option>
+                                <option value="3">3 perfumes</option>
+                                <option value="4">4 perfumes</option>
+                                <option value="5">5 perfumes</option>
+                            </select>
+                            <p id="info-quantidade" class="ajuda">
+                                <span>📦</span>
+                                Máximo 5 unidades por pedido
+                            </p>
+                        </div>
+                    </div>
                                         <!-- PROBLEMA: Resumo do pedido sem contexto semântico e sem atualizações em tempo real -->
                     <div class="resumo-pedido">
                         <h3 id="titulo-resumo">
@@ -300,7 +370,65 @@
                             </div>
                         </div>
                     </div>
+                    <div class="passo-compra passo-3">
+                        <h4><strong>Passo 3: Seus dados para entrega</strong></h4>
 
+                        <div class="form-grid">
+                            <div class="grupo-campo campo-completo">
+                                <!-- PROBLEMA: Input sem label associado -->
+                                <span>
+                                    <span>👤</span>
+                                    Nome completo *
+                                </span>
+                                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo"
+                                    autocomplete="name">
+                                <div id="erro-nome" class="mensagem-erro"></div>
+                            </div>
+
+                            <div class="grupo-campo">
+                                <!-- PROBLEMA: Input sem label associado -->
+                                <span>
+                                    <span>📍</span>
+                                    CEP *
+                                </span>
+                                <input type="text" id="cep" name="cep" placeholder="00000-000" required
+                                    autocomplete="postal-code" maxlength="9">
+                                <p id="ajuda-cep" class="ajuda">Precisamos do CEP para calcular o frete</p>
+                                <div id="erro-cep" class="mensagem-erro"></div>
+                            </div>
+
+                            <div class="grupo-campo">
+                                <!-- PROBLEMA: Input sem label associado -->
+                                <span>
+                                    <span>🏠</span>
+                                    Endereço completo
+                                </span>
+                                <input type="text" id="endereco" name="endereco"
+                                    placeholder="Rua, número, bairro, cidade" autocomplete="street-address">
+                            </div>
+
+                            <div class="grupo-campo">
+                                <!-- PROBLEMA: Input sem label associado -->
+                                <span>
+                                    <span>📱</span>
+                                    Telefone para contato
+                                </span>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"
+                                    autocomplete="tel" maxlength="15">
+                                <p id="ajuda-telefone" class="ajuda">Para contato sobre a entrega</p>
+                            </div>
+
+                            <div class="grupo-campo">
+                                <!-- PROBLEMA: Input sem label associado -->
+                                <span>
+                                    <span>📧</span>
+                                    E-mail
+                                </span>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com"
+                                    autocomplete="email">
+                            </div>
+                        </div>
+                    </div>  
                     <!-- PASSO 4 PRIMEIRO (ERRADO!) -->
                     <!-- PROBLEMA: Fieldset sem legend apropriada -->
                     <div class="passo-compra passo-4">
@@ -362,143 +490,17 @@
 
                     <!-- PASSO 3 EM SEGUNDO (ERRADO!) -->
                     <!-- PROBLEMA: Fieldset sem legend apropriada -->
-                    <div class="passo-compra passo-3">
-                        <h4><strong>Passo 3: Seus dados para entrega</strong></h4>
-
-                        <div class="form-grid">
-                            <div class="grupo-campo campo-completo">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <span>
-                                    <span>👤</span>
-                                    Nome completo *
-                                </span>
-                                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo"
-                                    autocomplete="name">
-                                <div id="erro-nome" class="mensagem-erro"></div>
-                            </div>
-
-                            <div class="grupo-campo">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <span>
-                                    <span>📍</span>
-                                    CEP *
-                                </span>
-                                <input type="text" id="cep" name="cep" placeholder="00000-000" required
-                                    autocomplete="postal-code" maxlength="9">
-                                <p id="ajuda-cep" class="ajuda">Precisamos do CEP para calcular o frete</p>
-                                <div id="erro-cep" class="mensagem-erro"></div>
-                            </div>
-
-                            <div class="grupo-campo">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <span>
-                                    <span>🏠</span>
-                                    Endereço completo
-                                </span>
-                                <input type="text" id="endereco" name="endereco"
-                                    placeholder="Rua, número, bairro, cidade" autocomplete="street-address">
-                            </div>
-
-                            <div class="grupo-campo">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <span>
-                                    <span>📱</span>
-                                    Telefone para contato
-                                </span>
-                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"
-                                    autocomplete="tel" maxlength="15">
-                                <p id="ajuda-telefone" class="ajuda">Para contato sobre a entrega</p>
-                            </div>
-
-                            <div class="grupo-campo">
-                                <!-- PROBLEMA: Input sem label associado -->
-                                <span>
-                                    <span>📧</span>
-                                    E-mail
-                                </span>
-                                <input type="email" id="email" name="email" placeholder="seu@email.com"
-                                    autocomplete="email">
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     <!-- PASSO 1 EM TERCEIRO (ERRADO!) -->
                     <!-- PROBLEMA: Fieldset sem legend apropriada -->
-                    <div class="passo-compra passo-1">
-                        <h4><strong>Passo 1: Escolha o tamanho do perfume</strong></h4>
 
-                        <p class="instrucao">Selecione uma das opções abaixo:</p>
 
-                        <!-- PROBLEMA: Grupo de radio buttons sem estrutura semântica e sem labels -->
-                        <div class="opcoes-tamanho">
-                            <input type="radio" id="tamanho-50ml" name="tamanho" value="50" data-preco="299.90" checked>
-                            <div class="opcao-tamanho">
-                                <div class="tamanho-visual">
-                                    <!-- PROBLEMA: Alt text genérico -->
-                                    <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
-                                        alt="produto meia-boca" class="mini-frasco">
-                                </div>
-                                <div class="tamanho-info">
-                                    <strong>50 mililitros - R$ 299,90</strong>
-                                    <span class="descricao-opcao" id="desc-50ml">Tamanho ideal para experimentar</span>
-                                </div>
-                            </div>
-
-                            <input type="radio" id="tamanho-75ml" name="tamanho" value="75" data-preco="399.90">
-                            <div class="opcao-tamanho popular">
-                                <div class="tamanho-visual">
-                                    <!-- PROBLEMA: Alt text genérico -->
-                                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
-                                        alt="frasco lixo" class="mini-frasco">
-                                </div>
-                                <div class="tamanho-info">
-                                    <strong>75 mililitros - R$ 399,90</strong>
-                                    <span class="descricao-opcao" id="desc-75ml">
-                                        <span>🔥</span>
-                                        MAIS POPULAR - Melhor custo benefício
-                                    </span>
-                                </div>
-                            </div>
-
-                            <input type="radio" id="tamanho-100ml" name="tamanho" value="100" data-preco="499.90">
-                            <div class="opcao-tamanho melhor-valor">
-                                <div class="tamanho-visual">
-                                    <!-- PROBLEMA: Alt text genérico -->
-                                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
-                                        alt="imagem do produto bem ruimzim" class="mini-frasco">
-                                </div>
-                                <div class="tamanho-info">
-                                    <strong>100 mililitros - R$ 499,90</strong>
-                                    <span class="descricao-opcao" id="desc-100ml">
-                                        <span>💰</span>
-                                        MELHOR VALOR - Maior economia
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            
 
                     <!-- PASSO 2 POR ÚLTIMO (ERRADO!) -->
                     <!-- PROBLEMA: Fieldset sem legend apropriada -->
-                    <div class="passo-compra passo-2">
-                        <h4><strong>Passo 2: Quantidade de produtos</strong></h4>
 
-                        <div class="quantidade-container">
-                            <!-- PROBLEMA: Select sem label associado -->
-                            <span class="label-quantidade">Quantos perfumes você deseja?</span>
-                            <select id="quantidade" name="quantidade" class="select-quantidade">
-                                <option value="1">1 perfume</option>
-                                <option value="2">2 perfumes</option>
-                                <option value="3">3 perfumes</option>
-                                <option value="4">4 perfumes</option>
-                                <option value="5">5 perfumes</option>
-                            </select>
-                            <p id="info-quantidade" class="ajuda">
-                                <span>📦</span>
-                                Máximo 5 unidades por pedido
-                            </p>
-                        </div>
-                    </div>
                 </form>
             </div>
 
@@ -535,8 +537,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- PROBLEMA: Footer sem tag semântica apropriada -->
         <div class="rodape">
             <p>&copy; 2024 SIFURRAH. Todos os direitos reservados.</p>
             <p class="info-acessibilidade">Página otimizada para leitores de tela e navegação por teclado</p>
