@@ -13,70 +13,7 @@
     <body>
 
                     <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
-            <div class="secao-extra">
-                <!-- PROBLEMA: h2 usado sem hierarquia apropriada -->
-                <h2 id="titulo-informacoes">
-                    <span>ℹ️</span>
-                    Informações Adicionais
-                </h2>
-
-                <!-- PROBLEMA: Details sem contexto semântico apropriado -->
-                <div class="info-expandivel">
-                    <div>
-                        <span>📄</span>
-                        Política de devolução e garantia
-                    </div>
-                    <div class="conteudo-expandivel">
-                        <p>Você tem 30 dias para trocar ou devolver o produto se não estiver satisfeito. O reembolso é
-                            integral e o frete de devolução é por nossa conta.</p>
-                    </div>
-                </div>
-
-                <div class="info-expandivel">
-                    <div>
-                        <span>❓</span>
-                        Perguntas frequentes
-                    </div>
-                    <div class="conteudo-expandivel">
-                        <div class="faq-item">
-                            <h4>O perfume é unissex?</h4>
-                            <p>Sim, o Essencia de Suvacu pode ser usado por homens e mulheres.</p>
-                        </div>
-                        <div class="faq-item">
-                            <h4>Quanto tempo dura a fragrância?</h4>
-                            <p>A fixação é de 8 a 12 horas, dependendo do tipo de pele.</p>
-                        </div>
-                        <div class="faq-item">
-                            <h4>É adequado para uso diário?</h4>
-                            <p>Sim, é versátil para qualquer ocasião, dia ou noite.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-expandivel">
-                    <div>
-                        <span>⭐</span>
-                        Mais avaliações dos clientes
-                    </div>
-                    <div class="conteudo-expandivel">
-                        <div class="avaliacoes-lista">
-                            <!-- PROBLEMA: Blockquotes sem estrutura semântica -->
-                            <div class="avaliacao-item">
-                                <p>"Perfume maravilhoso com ótima fixação. Recomendo muito!"</p>
-                                <span>- Maria S., São Paulo</span>
-                            </div>
-                            <div class="avaliacao-item">
-                                <p>"Vale cada centavo. Fragrância única e marcante."</p>
-                                <span>- João P., Rio de Janeiro</span>
-                            </div>
-                            <div class="avaliacao-item">
-                                <p>"Entrega rápida e produto exatamente como descrito."</p>
-                                <span>- Ana L., Belo Horizonte</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
         <!-- PROBLEMA: Esta div deveria ser uma tag semântica mais apropriada -->
         <div id="conteudo-principal">
@@ -534,6 +471,71 @@
                     <button type="button" onclick="novaCompra()" class="botao-secundario">
                         <span>🔄</span> Fazer Nova Compra
                     </button>
+                </div>
+                
+            </div>
+            <div  class="secao-extra">
+                <!-- PROBLEMA: h2 usado sem hierarquia apropriada -->
+                <h2 id="titulo-informacoes">
+                    <span>ℹ️</span>
+                    Informações Adicionais
+                </h2>
+
+                <!-- PROBLEMA: Details sem contexto semântico apropriado -->
+                <div class="info-expandivel">
+                    <div>
+                        <span>📄</span>
+                        Política de devolução e garantia
+                    </div>
+                    <div class="conteudo-expandivel">
+                        <p>Você tem 30 dias para trocar ou devolver o produto se não estiver satisfeito. O reembolso é
+                            integral e o frete de devolução é por nossa conta.</p>
+                    </div>
+                </div>
+
+                <div class="info-expandivel">
+                    <div>
+                        <span>❓</span>
+                        Perguntas frequentes
+                    </div>
+                    <div class="conteudo-expandivel">
+                        <div class="faq-item">
+                            <h4>O perfume é unissex?</h4>
+                            <p>Sim, o Essencia de Suvacu pode ser usado por homens e mulheres.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Quanto tempo dura a fragrância?</h4>
+                            <p>A fixação é de 8 a 12 horas, dependendo do tipo de pele.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>É adequado para uso diário?</h4>
+                            <p>Sim, é versátil para qualquer ocasião, dia ou noite.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-expandivel">
+                    <div>
+                        <span>⭐</span>
+                        Mais avaliações dos clientes
+                    </div>
+                    <div class="conteudo-expandivel">
+                        <div class="avaliacoes-lista">
+                            <!-- PROBLEMA: Blockquotes sem estrutura semântica -->
+                            <div class="avaliacao-item">
+                                <p>"Perfume maravilhoso com ótima fixação. Recomendo muito!"</p>
+                                <span>- Maria S., São Paulo</span>
+                            </div>
+                            <div class="avaliacao-item">
+                                <p>"Vale cada centavo. Fragrância única e marcante."</p>
+                                <span>- João P., Rio de Janeiro</span>
+                            </div>
+                            <div class="avaliacao-item">
+                                <p>"Entrega rápida e produto exatamente como descrito."</p>
+                                <span>- Ana L., Belo Horizonte</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
