@@ -32,9 +32,9 @@
                 <figcaption class="visually-hidden">Imagem ilustrativa do produto</figcaption>
 
                 <aside class="badges-produto" aria-label="Destaques do produto">
-                    <span class="badge novo"><span>🆕</span> LANÇAMENTO</span>
-                    <span class="badge melhor-vendido"><span>🏆</span> Nº1 EM VENDAS</span>
-                    <span class="badge exclusivo"><span>💎</span> EDIÇÃO LIMITADA</span>
+                    <span class="badge novo" aria-label="Lançamento"><span aria-hidden="true">🆕</span> LANÇAMENTO</span>
+                    <span class="badge melhor-vendido" aria-label="Número 1 em vendas"><span aria-hidden="true">🏆</span> Nº1 EM VENDAS</span>
+                    <span class="badge exclusivo" aria-label="Edição limitada"><span aria-hidden="true">💎</span> EDIÇÃO LIMITADA</span>
                 </aside>
             </figure>
 
@@ -58,14 +58,14 @@
                     </div>
 
                     <ul class="premios-reconhecimentos" aria-label="Prêmios recebidos">
-                        <li class="premio"><span>🏆</span> Melhor Fragrância Feminina 2024</li>
-                        <li class="premio"><span>🌟</span> Revista Vogue Beauty Awards</li>
+                        <li class="premio"><span aria-hidden="true">🏆</span> Melhor Fragrância Feminina 2024</li>
+                        <li class="premio"><span aria-hidden="true">🌟</span> Revista Vogue Beauty Awards</li>
                     </ul>
 
                     <div class="disponibilidade">
-                        <p class="estoque-urgencia" role="status"><span>⚡</span> Apenas 7 unidades restantes em
+                        <p class="estoque-urgencia" role="status" aria-live="polite"><span aria-hidden="true">⚡</span> Apenas 7 unidades restantes em
                             estoque</p>
-                        <p class="frete-info"><span>🚚</span> Frete grátis para todo Brasil acima de R$ 200</p>
+                        <p class="frete-info"><span aria-hidden="true">🚚</span> Frete grátis para todo Brasil acima de R$ 200</p>
                     </div>
                 </section>
             </div>
@@ -73,7 +73,7 @@
 
         <aside class="oferta-especial" aria-label="Oferta especial">
             <div class="banner-oferta">
-                <span class="texto-oferta"><span>🔥</span> OFERTA ESPECIAL: 10% de desconto à vista no PIX</span>
+                <span class="texto-oferta"><span aria-hidden="true">🔥</span> OFERTA ESPECIAL: 10% de desconto à vista no PIX</span>
                 <span class="tempo-limitado">Por tempo limitado!</span>
             </div>
         </aside>
@@ -94,8 +94,8 @@
 
                 <div class="grid-info">
                     <section class="card-info" aria-labelledby="titulo-notas">
-                        <h3 id="titulo-notas"><span>🌸</span> Notas Olfativas</h3>
-                        <ul>
+                        <h3 id="titulo-notas"><span aria-hidden="true">🌸</span> Notas Olfativas</h3>
+                        <ul aria-label="Lista de notas olfativas do perfume">
                             <li><strong>Notas de Topo:</strong> Bergamota, Limão Siciliano, Pêra</li>
                             <li><strong>Notas de Coração:</strong> Jasmim, Rosa Damascena, Peônia</li>
                             <li><strong>Notas de Fundo:</strong> Sândalo, Âmbar, Almíscar Branco</li>
@@ -103,20 +103,20 @@
                     </section>
 
                     <section class="card-info" aria-labelledby="titulo-especificacoes">
-                        <h3 id="titulo-especificacoes"><span>📋</span> Especificações Técnicas</h3>
-                        <ul>
+                        <h3 id="titulo-especificacoes"><span aria-hidden="true">📋</span> Especificações Técnicas</h3>
+                        <ul aria-label="Lista de especificações técnicas do produto">
                             <li>Concentração: Eau de Parfum 20%</li>
                             <li>Fixação: 8 a 12 horas</li>
-                            <li><span>🏆</span> Melhor Fragrância Feminina 2024</li>
-                            <li><span>📦</span> Embalagem premium</li>
+                            <li><span aria-hidden="true">🏆</span> Melhor Fragrância Feminina 2024</li>
+                            <li><span aria-hidden="true">📦</span> Embalagem premium</li>
                         </ul>
                     </section>
                 </div>
 
                 <section class="avaliacoes-destaque" aria-labelledby="titulo-avaliacoes">
-                    <h3 id="titulo-avaliacoes"><span>⭐</span> O que dizem nossos clientes</h3>
+                    <h3 id="titulo-avaliacoes"><span aria-hidden="true">⭐</span> O que dizem nossos clientes</h3>
 
-                    <article class="depoimento-cliente">
+                    <article class="depoimento-cliente" role="article" aria-label="Depoimento do cliente Marc Nonno">
                         <img src="/img/nonno.tiff" alt="Cliente Marc Nonno" class="foto-cliente" loading="lazy"
                             onerror="this.style.display='none'">
                         <blockquote>
@@ -125,7 +125,7 @@
                         </blockquote>
                     </article>
 
-                    <article class="depoimento-cliente">
+                    <article class="depoimento-cliente" role="article" aria-label="Depoimento do cliente Baran Gaum">
                         <blockquote>
                             <p>"Perfume maravilhoso que elimina qualquer cheiro do meu corpo. Minha namorada vai ao
                                 delírio"</p>
@@ -139,46 +139,46 @@
         </section>
 
         <aside class="secao-extra" aria-labelledby="titulo-info-adicionais">
-            <h2 id="titulo-info-adicionais"><span>ℹ️</span> Informações Adicionais</h2>
+            <h2 id="titulo-info-adicionais"><span aria-hidden="true">ℹ️</span> Informações Adicionais</h2>
 
-            <details class="info-expandivel">
-                <summary><span>📄</span> Política de devolução e garantia</summary>
-                <div class="conteudo-expandivel">
+            <details class="info-expandivel" aria-expanded="false">
+                <summary aria-describedby="desc-politica"><span aria-hidden="true">📄</span> Política de devolução e garantia</summary>
+                <div class="conteudo-expandivel" id="desc-politica">
                     <p>Você tem 30 dias para trocar ou devolver o produto se não estiver satisfeito. O reembolso é
                         integral e o frete de devolução é por nossa conta.</p>
                 </div>
             </details>
 
-            <details class="info-expandivel">
-                <summary><span>❓</span> Perguntas frequentes</summary>
-                <div class="conteudo-expandivel">
-                    <div class="faq-item">
-                        <h4>O perfume é unissex?</h4>
+            <details class="info-expandivel" aria-expanded="false">
+                <summary aria-describedby="desc-faq"><span aria-hidden="true">❓</span> Perguntas frequentes</summary>
+                <div class="conteudo-expandivel" id="desc-faq">
+                    <div class="faq-item" role="article" aria-labelledby="faq-q1">
+                        <h4 id="faq-q1">O perfume é unissex?</h4>
                         <p>Sim, o Essencia de Suvacu pode ser usado por homens e mulheres.</p>
                     </div>
-                    <div class="faq-item">
-                        <h4>Quanto tempo dura a fragrância?</h4>
+                    <div class="faq-item" role="article" aria-labelledby="faq-q2">
+                        <h4 id="faq-q2">Quanto tempo dura a fragrância?</h4>
                         <p>A fixação é de 8 a 12 horas, dependendo do tipo de pele.</p>
                     </div>
-                    <div class="faq-item">
-                        <h4>É adequado para uso diário?</h4>
+                    <div class="faq-item" role="article" aria-labelledby="faq-q3">
+                        <h4 id="faq-q3">É adequado para uso diário?</h4>
                         <p>Sim, é versátil para qualquer ocasião, dia ou noite.</p>
                     </div>
                 </div>
             </details>
 
             <section class="info-expandivel" aria-labelledby="titulo-mais-avaliacoes">
-                <h3 id="titulo-mais-avaliacoes"><span>⭐</span> Mais avaliações dos clientes</h3>
-                <div class="avaliacoes-lista">
-                    <blockquote class="avaliacao-item">
+                <h3 id="titulo-mais-avaliacoes"><span aria-hidden="true">⭐</span> Mais avaliações dos clientes</h3>
+                <div class="avaliacoes-lista" role="list" aria-label="Lista de avaliações de clientes">
+                    <blockquote class="avaliacao-item" role="listitem">
                         <p>"Perfume maravilhoso com ótima fixação. Recomendo muito!"</p>
                         <cite>- Maria S., São Paulo</cite>
                     </blockquote>
-                    <blockquote class="avaliacao-item">
+                    <blockquote class="avaliacao-item" role="listitem">
                         <p>"Vale cada centavo. Fragrância única e marcante."</p>
                         <cite>- João P., Rio de Janeiro</cite>
                     </blockquote>
-                    <blockquote class="avaliacao-item">
+                    <blockquote class="avaliacao-item" role="listitem">
                         <p>"Entrega rápida e produto exatamente como descrito."</p>
                         <cite>- Ana L., Belo Horizonte</cite>
                     </blockquote>
@@ -187,16 +187,17 @@
         </aside>
 
         <section id="secao-compra" class="secao-compra" aria-labelledby="titulo-compra">
-            <h2 id="titulo-compra"><span>🛒</span> Fazer Pedido</h2>
+            <h2 id="titulo-compra"><span aria-hidden="true">🛒</span> Fazer Pedido</h2>
 
-            <form novalidate aria-describedby="ajuda-fluxo">
+            <form novalidate aria-describedby="ajuda-fluxo" role="form">
 
                 <div class="progresso-form" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1"
-                    aria-labelledby="texto-progresso">
-                    <div class="barra-progresso">
+                    aria-labelledby="texto-progresso" aria-describedby="desc-progresso">
+                    <div class="barra-progresso" aria-hidden="true">
                         <div class="progresso-atual" style="width: 25%"></div>
                     </div>
                     <span id="texto-progresso" class="texto-progresso">Passo <span id="passo-atual">1</span> de 4</span>
+                    <span id="desc-progresso" class="visually-hidden">Progresso do formulário de compra</span>
                 </div>
 
                 <section class="passo-compra passo-1" aria-labelledby="titulo-passo-1">
@@ -207,7 +208,7 @@
                         <legend class="visually-hidden">Tamanhos disponíveis</legend>
 
                         <input type="radio" id="tamanho-50ml" name="tamanho" value="50" data-preco="299.90" checked
-                            onchange="aoMudarTamanho(event)">
+                            onchange="aoMudarTamanho(event)" aria-describedby="desc-50ml">
                         <label for="tamanho-50ml" class="opcao-tamanho" aria-describedby="desc-50ml">
                             <span class="tamanho-visual">
                                 <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
@@ -220,7 +221,7 @@
                         </label>
 
                         <input type="radio" id="tamanho-75ml" name="tamanho" value="75" data-preco="399.90"
-                            onchange="aoMudarTamanho(event)">
+                            onchange="aoMudarTamanho(event)" aria-describedby="desc-75ml">
                         <label for="tamanho-75ml" class="opcao-tamanho popular" aria-describedby="desc-75ml">
                             <span class="tamanho-visual">
                                 <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
@@ -228,13 +229,13 @@
                             </span>
                             <span class="tamanho-info">
                                 <strong>75 mililitros - R$ 399,90</strong>
-                                <span class="descricao-opcao" id="desc-75ml"><span>🔥</span> MAIS POPULAR - Melhor custo
+                                <span class="descricao-opcao" id="desc-75ml"><span aria-hidden="true">🔥</span> MAIS POPULAR - Melhor custo
                                     benefício</span>
                             </span>
                         </label>
 
                         <input type="radio" id="tamanho-100ml" name="tamanho" value="100" data-preco="499.90"
-                            onchange="aoMudarTamanho(event)">
+                            onchange="aoMudarTamanho(event)" aria-describedby="desc-100ml">
                         <label for="tamanho-100ml" class="opcao-tamanho melhor-valor" aria-describedby="desc-100ml">
                             <span class="tamanho-visual">
                                 <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
@@ -242,7 +243,7 @@
                             </span>
                             <span class="tamanho-info">
                                 <strong>100 mililitros - R$ 499,90</strong>
-                                <span class="descricao-opcao" id="desc-100ml"><span>💰</span> MELHOR VALOR - Maior
+                                <span class="descricao-opcao" id="desc-100ml"><span aria-hidden="true">💰</span> MELHOR VALOR - Maior
                                     economia</span>
                             </span>
                         </label>
@@ -261,12 +262,12 @@
                             <option value="4">4 perfumes</option>
                             <option value="5">5 perfumes</option>
                         </select>
-                        <p id="info-quantidade" class="ajuda"><span>📦</span> Máximo 5 unidades por pedido</p>
+                        <p id="info-quantidade" class="ajuda"><span aria-hidden="true">📦</span> Máximo 5 unidades por pedido</p>
                     </div>
                 </section>
 
                 <aside class="resumo-pedido" aria-labelledby="titulo-resumo" aria-live="polite">
-                    <h3 id="titulo-resumo"><span>📄</span> Resumo do Seu Pedido</h3>
+                    <h3 id="titulo-resumo"><span aria-hidden="true">📄</span> Resumo do Seu Pedido</h3>
                     <div class="resumo-visual">
                         <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=150&h=200&fit=crop&crop=center&q=90"
                             alt="Imagem do perfume selecionado" class="produto-resumo" id="imagem-resumo">
@@ -280,13 +281,13 @@
                             <div>Subtotal:</div>
                             <div id="subtotal">R$ 299,90</div>
 
-                            <div><span>💰</span> Desconto à vista (PIX):</div>
+                            <div><span aria-hidden="true">💰</span> Desconto à vista (PIX):</div>
                             <div id="desconto" class="destaque-desconto">R$ 0,00 (sem desconto)</div>
 
                             <div><strong>Total à vista:</strong></div>
                             <div id="total-avista" class="total-destaque"><strong>R$ 299,90</strong></div>
 
-                            <div><span>💳</span> Ou parcelado:</div>
+                            <div><span aria-hidden="true">💳</span> Ou parcelado:</div>
                             <div id="parcelamento">6x de R$ 49,98 sem juros</div>
                         </div>
                     </div>
@@ -298,29 +299,29 @@
 
                     <div class="form-grid">
                         <div class="grupo-campo campo-completo">
-                            <label for="nome"><span>👤</span> Nome completo *</label>
-                            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo"
+                            <label for="nome"><span aria-hidden="true">👤</span> Nome completo *</label>
+                            <input type="text" id="nome" name="nome" required aria-required="true" placeholder="Digite seu nome completo"
                                 autocomplete="name" aria-describedby="erro-nome">
                             <div id="erro-nome" class="mensagem-erro" role="alert"></div>
                         </div>
 
                         <div class="grupo-campo">
-                            <label for="cep"><span>📍</span> CEP *</label>
-                            <input type="text" id="cep" name="cep" placeholder="00000-000" required
+                            <label for="cep"><span aria-hidden="true">📍</span> CEP *</label>
+                            <input type="text" id="cep" name="cep" placeholder="00000-000" required aria-required="true"
                                 autocomplete="postal-code" maxlength="9" aria-describedby="ajuda-cep erro-cep">
                             <p id="ajuda-cep" class="ajuda">Precisamos do CEP para calcular o frete</p>
                             <div id="erro-cep" class="mensagem-erro" role="alert"></div>
                         </div>
 
                         <div class="grupo-campo">
-                            <label for="endereco"><span>🏠</span> Endereço completo</label>
+                            <label for="endereco"><span aria-hidden="true">🏠</span> Endereço completo</label>
                             <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade"
                                 autocomplete="street-address" aria-describedby="erro-endereco">
                             <div id="erro-endereco" class="mensagem-erro" role="alert"></div>
                         </div>
 
                         <div class="grupo-campo">
-                            <label for="telefone"><span>📱</span> Telefone para contato</label>
+                            <label for="telefone"><span aria-hidden="true">📱</span> Telefone para contato</label>
                             <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"
                                 autocomplete="tel" maxlength="15" aria-describedby="ajuda-telefone erro-telefone">
                             <p id="ajuda-telefone" class="ajuda">Para contato sobre a entrega</p>
@@ -328,7 +329,7 @@
                         </div>
 
                         <div class="grupo-campo">
-                            <label for="email"><span>📧</span> E-mail</label>
+                            <label for="email"><span aria-hidden="true">📧</span> E-mail</label>
                             <input type="email" id="email" name="email" placeholder="seu@email.com"
                                 autocomplete="email" aria-describedby="erro-email">
                             <div id="erro-email" class="mensagem-erro" role="alert"></div>
@@ -340,65 +341,65 @@
                     <h3 id="titulo-passo-4">Passo 4: Confirmar pedido</h3>
 
                     <fieldset class="info-pagamento">
-                        <legend id="titulo-pagamento"><span>💳</span> Formas de pagamento aceitas</legend>
+                        <legend id="titulo-pagamento"><span aria-hidden="true">💳</span> Formas de pagamento aceitas</legend>
 
                         <div class="metodos-pagamento" role="radiogroup" aria-labelledby="titulo-pagamento">
                             <input type="radio" id="pagamento-cartao" name="pagamento" value="cartao"
-                                onchange="aoMudarPagamento(event)">
-                            <label class="metodo-pagamento" id="desc-cartao" for="pagamento-cartao"><span>💳</span>
+                                onchange="aoMudarPagamento(event)" aria-describedby="desc-cartao">
+                            <label class="metodo-pagamento" id="desc-cartao" for="pagamento-cartao"><span aria-hidden="true">💳</span>
                                 Cartão de crédito</label>
 
                             <input type="radio" id="pagamento-pix" name="pagamento" value="pix" checked
-                                onchange="aoMudarPagamento(event)">
-                            <label class="metodo-pagamento destaque" id="desc-pix" for="pagamento-pix"><span>🔄</span>
+                                onchange="aoMudarPagamento(event)" aria-describedby="desc-pix">
+                            <label class="metodo-pagamento destaque" id="desc-pix" for="pagamento-pix"><span aria-hidden="true">🔄</span>
                                 PIX (10% desconto)</label>
 
                             <input type="radio" id="pagamento-boleto" name="pagamento" value="boleto"
-                                onchange="aoMudarPagamento(event)">
-                            <label class="metodo-pagamento" id="desc-boleto" for="pagamento-boleto"><span>📄</span>
+                                onchange="aoMudarPagamento(event)" aria-describedby="desc-boleto">
+                            <label class="metodo-pagamento" id="desc-boleto" for="pagamento-boleto"><span aria-hidden="true">📄</span>
                                 Boleto bancário</label>
                         </div>
                     </fieldset>
 
                     <button type="button" id="finalizar-pedido" class="botao-principal" onclick="finalizarPedido()"
-                        aria-describedby="ajuda-finalizar">
-                        <span>🛒</span>
+                        aria-describedby="ajuda-finalizar" aria-label="Finalizar pedido por R$ 299,90">
+                        <span aria-hidden="true">🛒</span>
                         FINALIZAR PEDIDO - <span id="valor-final">R$ 299,90</span>
                     </button>
                     <p id="ajuda-finalizar" class="ajuda">Use Ctrl + Enter para finalizar.</p>
 
                     <ul class="garantias" id="garantias-lista" aria-label="Garantias">
-                        <li class="garantia-item"><span>✓</span> Garantia de 30 dias</li>
-                        <li class="garantia-item"><span>🚚</span> Frete grátis acima de R$ 200</li>
-                        <li class="garantia-item"><span>⚡</span> Entrega em 3-5 dias úteis</li>
+                        <li class="garantia-item"><span aria-hidden="true">✓</span> Garantia de 30 dias</li>
+                        <li class="garantia-item"><span aria-hidden="true">🚚</span> Frete grátis acima de R$ 200</li>
+                        <li class="garantia-item"><span aria-hidden="true">⚡</span> Entrega em 3-5 dias úteis</li>
                     </ul>
                 </section>
             </form>
         </section>
 
         <section id="mensagem-sucesso" class="oculto secao-sucesso" tabindex="-1" role="alertdialog"
-            aria-labelledby="titulo-sucesso">
+            aria-labelledby="titulo-sucesso" aria-describedby="detalhes-sucesso-desc">
             <div class="icone-sucesso" aria-hidden="true">✅</div>
             <h2 id="titulo-sucesso">Pedido Realizado com Sucesso!</h2>
 
-            <div class="detalhes-sucesso">
-                <p><strong><span>🎉</span> Parabéns!</strong> Seu pedido do Perfume Essencia de Suvacu foi confirmado.
+            <div class="detalhes-sucesso" id="detalhes-sucesso-desc">
+                <p><strong><span aria-hidden="true">🎉</span> Parabéns!</strong> Seu pedido do Perfume Essencia de Suvacu foi confirmado.
                 </p>
 
                 <div class="card-pedido" role="group" aria-label="Detalhes do pedido confirmado">
-                    <div><span>📋</span> Número do pedido:</div>
+                    <div><span aria-hidden="true">📋</span> Número do pedido:</div>
                     <div id="numero-pedido">SIFU12345</div>
 
-                    <div><span>💰</span> Total pago:</div>
+                    <div><span aria-hidden="true">💰</span> Total pago:</div>
                     <div id="total-pago">R$ 299,90</div>
 
-                    <div><span>🚚</span> Prazo de entrega:</div>
+                    <div><span aria-hidden="true">🚚</span> Prazo de entrega:</div>
                     <div>3 a 5 dias úteis</div>
                 </div>
 
-                <p><span>📧</span> Você receberá um e-mail com os detalhes do pedido e o código de rastreamento.</p>
+                <p><span aria-hidden="true">📧</span> Você receberá um e-mail com os detalhes do pedido e o código de rastreamento.</p>
 
-                <button type="button" onclick="novaCompra()" class="botao-secundario"><span>🔄</span> Fazer Nova Compra
+                <button type="button" onclick="novaCompra()" class="botao-secundario" aria-label="Fazer uma nova compra"><span aria-hidden="true">🔄</span> Fazer Nova Compra
                 </button>
             </div>
         </section>
